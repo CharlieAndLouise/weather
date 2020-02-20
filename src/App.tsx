@@ -29,7 +29,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import { HomeScreen } from './pages/home/home-screen';
-import { MapScreen } from 'pages/map/map-screen';
+import { MapScreen } from './pages/map/map-screen';
 
 declare var global: {HermesInternal: null | {}};
 
