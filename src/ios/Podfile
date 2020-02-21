@@ -34,12 +34,17 @@ target 'weather' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'react-native-mapbox-gl', :path => '../node_modules/@react-native-mapbox-gl/maps'
+
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
   target 'weatherTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
   use_native_modules!
+  use_frameworks!
 end
 
 target 'weather-tvOS' do

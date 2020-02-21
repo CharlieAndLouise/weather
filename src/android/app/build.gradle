@@ -178,13 +178,16 @@ android {
     }
 }
 
-dependencies {
+dependencies {    
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
     //Below 2 lines are for RNN navigation
     implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
+
+    //Mapbox GL
+    implementation project(':@react-native-mapbox-gl_maps')
 
     if (enableHermes) {
         def hermesPath = "../../node_modules/hermes-engine/android/";
